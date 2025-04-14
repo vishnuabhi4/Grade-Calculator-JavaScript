@@ -1,0 +1,60 @@
+body{
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+.card{
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+.card-header{
+    border-bottom: none;
+}
+#calculate-btn{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+#calculate-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#result{
+display: block;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Grade colors */
+.grade-a-plus {
+    color: #198754; /* Bootstrap success color */
+}
+
+.grade-a {
+    color: #20c997; /* Bootstrap teal color */
+}
+
+.grade-b {
+    color: #0d6efd; /* Bootstrap primary color */
+}
+
+.grade-c {
+    color: #fd7e14; /* Bootstrap orange color */
+}
+
+.grade-d {
+    color: #ffc107; /* Bootstrap warning color */
+}
+
+.grade-f {
+    color: #dc3545; /* Bootstrap danger color */
+}
+
+/* Animation for results */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-result {
+    animation: fadeIn 0.5s ease forwards;
+}
